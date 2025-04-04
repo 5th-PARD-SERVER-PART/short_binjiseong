@@ -1,7 +1,7 @@
 # 도서관 CRUD 구현
 
 # 제일 중요한거는 밑의 사진의 흐름을 이해하는 것!
-![picture](/picture.png)
+![picture.png](src/main/resources/static/picture.png)
 
 # 간단한 설명
 이 코드는 책에 관한 것들을 도서관 db에 저장을 하고 저장한 자료들을 찾기 위해서 bookId와 bookName으로 책을 찾고 수정하고 삭제하는 코드임
