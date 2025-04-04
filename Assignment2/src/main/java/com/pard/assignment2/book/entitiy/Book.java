@@ -1,7 +1,7 @@
-package com.pard.asg2.book.dto;
+package com.pard.assignment2.book.entitiy;
+
 
 import lombok.*;
-
 
 @Getter
 @Setter
@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 
-public class BookDto {
+public class Book {//바로 db생성인자
     private long bookId;
     private String bookName;
     private String author;

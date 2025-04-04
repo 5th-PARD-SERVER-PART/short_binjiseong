@@ -1,8 +1,8 @@
-package com.pard.asg2.book.controller;
+package com.pard.assignment2.book.controller;
 
 
-import com.pard.asg2.book.dto.BookDto;
-import com.pard.asg2.book.service.BookService;
+import com.pard.assignment2.book.dto.BookDto;
+import com.pard.assignment2.book.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

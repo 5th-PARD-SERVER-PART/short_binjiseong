@@ -1,7 +1,7 @@
-package com.pard.asg2.book.repository;
+package com.pard.assignment2.book.repository;
 
-import com.pard.asg2.book.dto.BookDto;
-import com.pard.asg2.book.entitiy.Book;
+import com.pard.assignment2.book.dto.BookDto;
+import com.pard.assignment2.book.entitiy.Book;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

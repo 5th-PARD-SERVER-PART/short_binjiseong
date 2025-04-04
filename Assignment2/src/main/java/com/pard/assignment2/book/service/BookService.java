@@ -1,8 +1,8 @@
-package com.pard.asg2.book.service;
+package com.pard.assignment2.book.service;
 
 
-import com.pard.asg2.book.dto.BookDto;
-import com.pard.asg2.book.repository.BookRepository;
+import com.pard.assignment2.book.dto.BookDto;
+import com.pard.assignment2.book.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

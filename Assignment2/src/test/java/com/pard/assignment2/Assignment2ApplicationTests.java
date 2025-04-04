@@ -1,10 +1,10 @@
-package com.pard.asg2;
+package com.pard.assignment2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Asg2ApplicationTests {
+class Assignment2ApplicationTests {
 
     @Test
     void contextLoads() {
