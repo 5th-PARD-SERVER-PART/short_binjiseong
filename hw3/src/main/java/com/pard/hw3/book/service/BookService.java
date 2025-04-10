@@ -127,4 +127,43 @@ public class BookService {
             throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
         }
     }
+    public List<ResponseBookDto> searchHarryPotterBooks() {
+        List<Book> books = bookRepo.findByBookNameContainingOrderByYearAsc("해리포터");
+
+        return books.stream().map(book -> ResponseBookDto.builder()
+                .Id(book.getId())
+                .bookId(book.getBookId())
+                .bookName(book.getBookName())
+                .author(book.getAuthor())
+                .publisher(book.getPublisher())
+                .year(book.getYear())
+                .build()
+        ).toList();
+    }
+    public List<ResponseBookDto> searchNoHarryPotterBooks() {
+        List<Book> books = bookRepo.findByBookNameNotContainingOrderByIdAsc("해리포터");
+
+        return books.stream().map(book -> ResponseBookDto.builder()
+                .Id(book.getId())
+                .bookId(book.getBookId())
+                .bookName(book.getBookName())
+                .author(book.getAuthor())
+                .publisher(book.getPublisher())
+                .year(book.getYear())
+                .build()
+        ).toList();
+    }
+    public List<ResponseBookDto> searchYearLessthan2015() {
+        List<Book> books = bookRepo.YearLessThanEqualOrderByIdAsc(2015);
+
+        return books.stream().map(book -> ResponseBookDto.builder()
+                .Id(book.getId())
+                .bookId(book.getBookId())
+                .bookName(book.getBookName())
+                .author(book.getAuthor())
+                .publisher(book.getPublisher())
+                .year(book.getYear())
+                .build()
+        ).toList();
+    }
 }

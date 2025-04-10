@@ -51,4 +51,17 @@ public class BookController {
         bookService.deleteByBookName(bookName);
         return "입력한 "+bookName+" 내용 삭제완료!";
     }
+    @GetMapping("/search/harrypotter")
+    public List<ResponseBookDto> searchHarryPotterBooks() {
+        return bookService.searchHarryPotterBooks();
+    }
+    @GetMapping("/search/noharrypotter")
+    public List<ResponseBookDto> searchNoHarryPotterBooks() {
+        return bookService.searchNoHarryPotterBooks();
+    }
+    @GetMapping("/search/less2015")
+    public List<ResponseBookDto> searchYearLessthan2015() {
+        return bookService.searchYearLessthan2015();
+    }
+
 }
