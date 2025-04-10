@@ -82,6 +82,7 @@ public class BookService {
             throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
         }
     }
+    @Transactional
     public void updateById(Long Id,RequestBookDto requestBookDto){
         Optional<Book> optionalBook = bookRepo.findById(Id);
         if(optionalBook.isPresent()) {
@@ -93,6 +94,7 @@ public class BookService {
             throw new IllegalArgumentException("해당 순서의 도서를 찾을 수 없습니다. ID: " + Id);
         }
     }
+    @Transactional
     public void updateByName(String bookName,RequestBookDto requestBookDto){
         Optional<Book> optionalBook = bookRepo.findByBookName(bookName);
         if(optionalBook.isPresent()) {
@@ -102,8 +104,17 @@ public class BookService {
         }
         else{
             throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
-
         }
     }
+    @Transactional
+    public void deleteById(Long Id){
+        Optional<Book> optionalBook = bookRepo.findById(Id);
+        if(optionalBook.isPresent()) {
+            bookRepo.deleteById(Id);
 
+        }
+        else{
+            throw new IllegalArgumentException("해당 순서의 도서를 찾을 수 없습니다. ID: " + Id);
+        }
+    }
 }

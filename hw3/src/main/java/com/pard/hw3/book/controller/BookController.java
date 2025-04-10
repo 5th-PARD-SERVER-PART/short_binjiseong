@@ -34,12 +34,16 @@ public class BookController {
     @PatchMapping("/id/{Id}")
     public String updateById(@PathVariable Long Id, @RequestBody RequestBookDto requestBookDto){
         bookService.updateById(Id,requestBookDto);
-        return "입력한 id로 해당 내용 수정완료!";
+        return "입력한 "+Id+"번 내용 수정완료!";
     }
     @PatchMapping("/name/{bookName}")
     public String updateByName(@PathVariable String bookName, @RequestBody RequestBookDto requestBookDto){
         bookService.updateByName(bookName,requestBookDto);
-        return "입력한 책이름으로 해당 내용 수정완료!";
+        return "입력한 "+bookName+" 내용 삭제완료!";
     }
-
+    @DeleteMapping("id/{Id}")
+    public String deleteById(@PathVariable Long Id){
+        bookService.deleteById(Id);
+        return "입력한 "+Id+"번 내용 삭제완료!";
+    }
 }
