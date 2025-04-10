@@ -82,7 +82,7 @@ public class BookService {
             throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
         }
     }
-    public void update(Long Id,RequestBookDto requestBookDto){
+    public void updateById(Long Id,RequestBookDto requestBookDto){
         Optional<Book> optionalBook = bookRepo.findById(Id);
         if(optionalBook.isPresent()) {
             Book book = optionalBook.get();
@@ -91,6 +91,18 @@ public class BookService {
         }
         else{
             throw new IllegalArgumentException("해당 순서의 도서를 찾을 수 없습니다. ID: " + Id);
+        }
+    }
+    public void updateByName(String bookName,RequestBookDto requestBookDto){
+        Optional<Book> optionalBook = bookRepo.findByBookName(bookName);
+        if(optionalBook.isPresent()) {
+            Book book = optionalBook.get();
+            book.update(requestBookDto);
+            bookRepo.save(book);// 이게 없으면 db에 저장 안됨!!!
+        }
+        else{
+            throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
+
         }
     }
 
