@@ -39,7 +39,7 @@ public class BookController {
     @PatchMapping("/name/{bookName}")
     public String updateByName(@PathVariable String bookName, @RequestBody RequestBookDto requestBookDto){
         bookService.updateByName(bookName,requestBookDto);
-        return "입력한 "+bookName+" 내용 삭제완료!";
+        return "입력한 "+bookName+" 내용 수정완료!";
     }
     @DeleteMapping("id/{Id}")
     public String deleteById(@PathVariable Long Id){

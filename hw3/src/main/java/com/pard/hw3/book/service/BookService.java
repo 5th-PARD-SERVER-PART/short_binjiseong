@@ -16,7 +16,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BookService {
     private final BookRepo bookRepo;
-    private final RestClient.Builder builder;
+
 
     public void save(RequestBookDto requestBookDto){
         Book book = Book.builder()
