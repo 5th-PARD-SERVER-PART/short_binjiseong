@@ -16,5 +16,5 @@ public class RequestBookDto {
     private String bookName;
     private String author;
     private String publisher;
-    private long year;
+    private Long year;
 }

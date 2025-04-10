@@ -6,6 +6,7 @@ import com.pard.hw3.book.entity.Book;
 import com.pard.hw3.book.repo.BookRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
@@ -79,6 +80,17 @@ public class BookService {
         }
         else{
             throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
+        }
+    }
+    public void update(Long Id,RequestBookDto requestBookDto){
+        Optional<Book> optionalBook = bookRepo.findById(Id);
+        if(optionalBook.isPresent()) {
+            Book book = optionalBook.get();
+            book.update(requestBookDto);
+            bookRepo.save(book);// 이게 없으면 db에 저장 안됨!!!
+        }
+        else{
+            throw new IllegalArgumentException("해당 순서의 도서를 찾을 수 없습니다. ID: " + Id);
         }
     }
 

@@ -31,6 +31,10 @@ public class BookController {
     public ResponseBookDto readByBookName(@PathVariable String bookName){
         return bookService.readByBookName(bookName);
     }
-
+    @PatchMapping("/id/{Id}")
+    public String update(@PathVariable Long Id, @RequestBody RequestBookDto requestBookDto){
+        bookService.update(Id,requestBookDto);
+        return "수정완료!";
+    }
 
 }
