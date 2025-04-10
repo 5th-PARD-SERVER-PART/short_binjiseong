@@ -96,10 +96,10 @@ List<Book> findByYearLessThanEqualOrderByIdAsc(long year);
 ![9.png](src/main/resources/static/9.png)
 ### 5. 나만의 jpa 3가지
 
-- 1. “해리포터” 시리즈 책 보여주기
+- 1. “해리포터” 시리즈 책 보여주기 -> `http://localhost:8080/book/search/harrypotter`
 ![10.png](src/main/resources/static/10.png)
 ![11.png](src/main/resources/static/11.png)
-- 2. “해리포터” 아닌 책 보여주기
+- 2. “해리포터” 아닌 책 보여주기 -> `http://localhost:8080/book/search/noharrypotter`
 ![12.png](src/main/resources/static/12.png)
-- 3. 2015년 이전에 나온 책
+- 3. 2015년 이전에 나온 책 -> `http://localhost:8080/book/search/less2015`
 ![13.png](src/main/resources/static/13.png)
