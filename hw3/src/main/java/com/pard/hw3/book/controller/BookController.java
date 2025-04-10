@@ -46,4 +46,9 @@ public class BookController {
         bookService.deleteById(Id);
         return "입력한 "+Id+"번 내용 삭제완료!";
     }
+    @DeleteMapping("name/{bookName}")
+    public String deleteByBookName(@PathVariable String bookName){
+        bookService.deleteByBookName(bookName);
+        return "입력한 "+bookName+" 내용 삭제완료!";
+    }
 }

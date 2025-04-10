@@ -8,4 +8,5 @@ import java.util.Optional;
 
 public interface BookRepo extends JpaRepository<Book,Long> {
     Optional<Book> findByBookName(String bookName);
+    void deleteByBookName(String bookName);
 }

@@ -117,4 +117,14 @@ public class BookService {
             throw new IllegalArgumentException("해당 순서의 도서를 찾을 수 없습니다. ID: " + Id);
         }
     }
+    @Transactional
+    public void deleteByBookName(String bookName){
+        Optional<Book> optionalBook = bookRepo.findByBookName(bookName);
+        if(optionalBook.isPresent()) {
+            bookRepo.deleteByBookName(bookName);
+        }
+        else{
+            throw new IllegalArgumentException("해당 이름의 도서를 찾을 수 없습니다. BookName: " + bookName);
+        }
+    }
 }
