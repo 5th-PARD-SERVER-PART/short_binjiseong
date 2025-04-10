@@ -78,10 +78,14 @@ List<Book> findByYearLessThanEqualOrderByIdAsc(long year);
 - 
 ### 3. Update
 - 원하는 책 id로 수정하기-> `@Patchmapping`으로 `http://localhost:8080/book/id/{원하는 id}`
+# Update 전
 ![4.png](src/main/resources/static/4.png)
+# Update 후
 ![5.png](src/main/resources/static/5.png)
 - 원하는 책 책이름으로 수정하기 -> `@Patchmapping`으로 `http://localhost:8080/book/name/{원하는 책이름}`
+# Update 전
 ![6.png](src/main/resources/static/6.png)
+# Update 후
 ![7.png](src/main/resources/static/7.png)
 - 여기서 만약에 없는 id나 책이름을 입력하게 되면 exception 발생시킴
 ![8.png](src/main/resources/static/8.png)
