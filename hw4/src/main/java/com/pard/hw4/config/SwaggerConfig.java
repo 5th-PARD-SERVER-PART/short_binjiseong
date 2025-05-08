@@ -21,7 +21,7 @@ public class SwaggerConfig {
 
     private Info apiInfo(){
         return new Info()
-                .title("hw4")
+                .title("hw 4")
                 .description("hw4 스웨거")
                 .version("1.0.0");
     }

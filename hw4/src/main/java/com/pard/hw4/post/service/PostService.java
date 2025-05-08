@@ -63,6 +63,7 @@ public class PostService {
             throw new IllegalArgumentException("postId가 존재하지 않음");
         }
     }
+
     public void delete(Long postId){
         postRepository.deleteById(postId);
     }
