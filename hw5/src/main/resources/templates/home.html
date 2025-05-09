@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 성공</title>
+    <style>
+        body {
+            font-family: "Apple SD Gothic Neo", sans-serif;
+            background-color: #eef1f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .message-box {
+            background-color: #ffffff;
+            padding: 50px 70px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .message-box h1 {
+            font-size: 28px;
+            margin-bottom: 16px;
+            color: #34495e;
+        }
+
+        .message-box p {
+            font-size: 18px;
+            color: #555;
+            margin: 0;
+        }
+
+        .highlight {
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #2ecc71;
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="message-box">
+    <div class="success-icon">🎉</div>
+    <p>Login Successful</p>
+    <p class="user-info" th:text="${userName}">User Name</p>
+</div>
+
+</body>
+</html>
