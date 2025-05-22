@@ -1,6 +1,6 @@
-package com.pard.hw5.config;
+package com.pard.practice.config;
 
-import com.pard.hw5.member.service.PrincipalOauth2UserService;
+import com.pard.practice.member.service.PrincipalOauth2UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.pard.hw5.config;
+package com.pard.practice.config;
 
 import org.springframework.boot.web.servlet.view.MustacheViewResolver;
 import org.springframework.context.annotation.Configuration;
