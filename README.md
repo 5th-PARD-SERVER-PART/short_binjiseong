@@ -1,12 +1,12 @@
 
 ## 📌 GitHub Repository
-- [5th PARD SERVER - GaehwaNane (GitHub)](https://github.com/5th-PARD-SERVER-PART/GaehwaNane.git)
+- [[5th PARD SERVER - GaehwaNane (GitHub)](https://github.com/5th-PARD-SERVER-PART/GaehwaNane.git)](https://github.com/5th-PARD-SERVER-PART/short_binjiseong.git)
 
 ## 🗂 ERD
 - (ERD 이미지 또는 링크를 여기에 삽입해 주세요)
 
 ## 🔗 Swagger API 문서
-- [Swagger UI 바로가기](http://172.18.142.173:8080/swagger-ui/index.html#)
+- [Swagger UI 바로가기]([http://172.18.142.173:8080/swagger-ui/index.html#](http://172.18.137.90:8080/swagger-ui/index.html))
 
 ## 🔄 클백 연결표
 
