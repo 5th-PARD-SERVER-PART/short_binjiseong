@@ -10,12 +10,12 @@
 
 ## 🔄 클백 연결표
 
-| 순서 | 기능 설명 | API Endpoint | 메서드 | 비고 | 연결 성공 |
+| 순서 | 기능 설명 | API Endpoint | 메서드 | 비고 |
 |------|-----------|---------------|--------|------|
-| 1 | 사용자 이름 입력 및 초기화 | `/progress/init` | `POST` | 사용자 진행 상황 초기화 | x |
-| 2 | 다음 질문 요청 | `/question/next?userName={userName}` | `GET` | 사용자 진행 기반 질문 반환 | x |
-| 3 | 응답 제출 | `/response` | `POST` | 질문 응답 리스트 저장 | x |
-| 4 | 결과 반환 | `/response/{userId}` | `GET` | 사용자 결과 분석 및 반환 | x |
+| 1 | 사용자 이름 입력 및 초기화 | `/progress/init` | `POST` | 사용자 진행 상황 초기화 | 
+| 2 | 다음 질문 요청 | `/question/next?userName={userName}` | `GET` | 사용자 진행 기반 질문 반환 | 
+| 3 | 응답 제출 | `/response` | `POST` | 질문 응답 리스트 저장 | 
+| 4 | 결과 반환 | `/response/{userId}` | `GET` | 사용자 결과 분석 및 반환 |
 
 ---
 
