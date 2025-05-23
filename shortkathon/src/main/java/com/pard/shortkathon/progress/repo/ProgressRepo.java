@@ -8,5 +8,4 @@ import java.util.Optional;
 public interface ProgressRepo extends JpaRepository<Progress, Long> {
     Optional<Progress> findByUserName(String userName);
 
-    Optional<Progress> findTopByUserNameOrderByIdDesc(String userName);
 }
