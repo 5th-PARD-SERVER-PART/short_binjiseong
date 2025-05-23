@@ -19,8 +19,8 @@ public class Response {
 
     private Long userId;
 
+    private String userAnswer;
+
     @ManyToOne(fetch = FetchType.LAZY)
     private Question question;
-
-    private String userAnswer;
 }

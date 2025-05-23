@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class QuestionResDto {
     private Long id;
+    private String userName;
     private String questionText;
     private String option1;
     private String option2;
