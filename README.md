@@ -6,8 +6,10 @@
 - <img width="307" alt="스크린샷 2025-05-24 07 24 07" src="https://github.com/user-attachments/assets/35856334-f3c5-44b3-b633-c00a0308346a" />
 
 
-## 🔗 Swagger API 문서
+## 🔗 Swagger 
 - http://172.18.137.90:8080/swagger-ui/index.html
+## API 문서
+- https://www.notion.so/api-f0e02bcf0d4147029f3940c05414be6d
 
 ## 🔄 클백 연결표
 
